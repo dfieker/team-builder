@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TeamMembers from "./TeamMembers";
+import Form from "./Form";
 
 function App() {
   const [list, setList] = useState([
@@ -9,12 +11,16 @@ function App() {
       Email: 'daniel1972846293847102937@yoohoo.com',
       Role: 'WebDev'
     }
-  ])
+  ]);
+  const addNewMember = member => {
+    const newMember = {
+      id: 
+    }
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        
-      </header>
+      <TeamMembers />
+      <Form />
     </div>
   );
 }
